@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+.bg-dark{
+    background: transparent !important;
+    color: #f9a743;
+}
+.bg-dark.scrolled{
+    background: 
+    #1d0e45 !important;
+    color: #f9a743;
+}
+.nav-link:any-link{
+    text-emphasis: none;
+    text-decoration: none;
+    list-style-type: none;
+    color: #f9a743;
+}
+.contact-boxes{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.carousel-item .active {
+    position: absolute;
+    text-align: center;
+    color: #f9a743;
+    display: flex;
+    background: no-repeat center center scroll;
+    -webkit-backdrop-size: cover;
+    background-size: cover;
+  }
+.middle-middle {
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    font-size: 70px;
+    top: 36%;
+    left: 38%;
+    color: #f9a743;
+    font-family: 'Righteous', cursive;
+    display: flex;
+  }
+
+
+/* ===================== COMPANY PROFILE STARTS =====================*/
+
+.serviceBox{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 0 10px;
+    border-bottom: 5px solid transparent;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover{ border-bottom: 5px solid #f9a743; }
+.serviceBox .service-icon{
+    color: #1d0e45;
+    background-color: #fff;
+    font-size: 60px;
+    line-height: 110px;
+    height: 130px;
+    width: 130px;
+    margin: 0 auto 50px;
+    border: 10px solid #f9a743;
+    border-radius: 0 0 50% 50%;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+.serviceBox:hover .service-icon{
+    color: #1d0e45;
+    
+}
+.serviceBox .service-icon:after{
+    content: '';
+    background-color: #f9a743;
+    height: 30px;
+    width: 30px;
+    border-radius: 0 20px 20px 20px;
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8, 1.05) rotate(45deg);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition: all 0.3s;
+}
+.serviceBox:hover .service-icon:after{
+    opacity: 1;
+    bottom: -50px;
+}
+.serviceBox .title{
+    color: #1d0e45;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.serviceBox:hover .title{ color: #f9a743; }
+.serviceBox .description{
+    color: #999;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.contact-form{
+   left: 40%;
+
+}
+
+/* ===================== COMPANY PROFILE ENDS =====================*/
+/* ===================== FOOTER START =====================*/
+
+footer {
+	color:white;
+	background: #1d0e45;
+    padding:70px 0;
+   
+}
+
+footer h4 {
+	color:#ffffff;
+}
+
+footer h4:after {
+	content: "";
+  	display: block;
+  	width: 60px;
+  	height: 3px;
+ 	background-color: #f9a743;
+ 	margin-top: 12px;
+  	margin-bottom: 15px;
+}
+
+footer ul li a {
+	color:#ececee;
+}
+
+footer ul li a:hover {
+	color:#ffffff;
+}
+
+footer .button-big {
+	font-size:16px;
+	width:100%;
+}
+
+footer dt {
+	color:#ffffff;
+	font-family:'montserratlight';
+	font-size:25px;
+	margin-top:7px;
+	margin-bottom:3px;
+	cursor:pointer;
+}
+.list-unstyled-footer {
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+  }
+
+.footer-a:any-link {
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+   
+  }
+.check-sy-footer{
+    color: #f9a743;
+}
+
+/* ===================== FOOTER ENDS =====================*/
+/* ===================== SOCIAL ICONS STARTS =====================*/
+
+.social_icons_area .media .media-body h5{
+    color: #f9a743;
+    padding-top: 20px;
+   
+}
+.designer-profile:any-link{
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: #f9a743;
+}
+.social-icons ul
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.social-icons ul li
+{
+    list-style: none;
+}
+.social-icons ul li a
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #ddd, #fff);
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0px 10px 15px rgba(0,0,0,.3);
+    transition: .5s;
+}
+.social-icons ul li a:hover
+{
+    box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+}
+
+.social-icons ul li a .fa
+{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #fff, #ddd);
+    display: block;
+    border-radius: 50%;
+    line-height: 100%;
+    line-height: 48px;
+    font-size: 24px;
+    color: #bdbdbd;
+    transition: .5s;
+}
+.social-icons ul li:nth-child(1) a:hover .fa
+{
+    color: #3b5999;
+}
+.social-icons ul li:nth-child(2) a:hover .fa
+{
+    color: #55acee;
+}
+.social-icons ul li:nth-child(3) a:hover .fa
+{
+    color: #55acee;
+}
+.social-icons ul li:nth-child(4) a:hover .fa
+{
+    color: #df3649;
+}
+
+/* ===================== SOCIAL ICONS ENDS =====================*/
+
+/* ================================================================
+===================================================================
+===================================================================
+===================================================================
+===================================================================
+============================================== */
+
+/* ================ MEDIA QUERY STUFF ====================== */
+
+@media only screen and (max-width: 980px) {
+    .middle-middle {
+        position: absolute;
+        font-weight: 700;
+        text-align: center;
+        font-size: 50px;
+        top: 47%;
+        left: 16%;
+        color: #f9a743;
+        font-family: 'Righteous', cursive;
+        display: flex;
+      }
+    
+    
+    .send-button{
+        margin-bottom: 300px !important;
+      
+    }
+    /* Social Icons Area */
+    .social_icons_area{
+        background: #050216; 
+        height:130px !important; 
+        padding-top: 10px
+    }
+    .social_icons_area .media .media-body h5{
+        color: #f9a743;
+        padding-top: 5px; 
+        text-align: center;  
+   }
+
+    .social-icons ul
+    {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding-top:70px;
+        display: flex;
+    }
+}

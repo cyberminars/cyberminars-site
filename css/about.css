@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+.bg-dark{
+    background: transparent !important;
+    
+}
+.bg-dark.scrolled{
+    background: 
+    #1d0e45 !important;
+    color: #f9a743;
+}
+.nav-link:any-link{
+    text-emphasis: none;
+    text-decoration: none;
+    list-style-type: none;
+    color: #f9a743;
+}
+.carousel-item .active {
+    position: absolute;
+    text-align: center;
+    color: #f9a743;
+    display: flex;
+    background: no-repeat center center scroll;
+    -webkit-backdrop-size: cover;
+    background-size: cover;
+  }
+.middle-middle {
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    font-size: 70px;
+    top: 36%;
+    left: 38%;
+    color: #f9a743;
+    font-family: 'Righteous', cursive;
+    display: flex;
+  }
+
+/* ===================== COMPANY PROFILE STARTS =====================*/
+
+.serviceBox{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding: 30px 9px 0;
+    font-size: 18px;
+    position: relative;
+
+}
+.serviceBox:before,
+.serviceBox:after{
+    content: "";
+    background: #f9a743;
+    width: 25px;
+    height: 15px;
+    font-family: 'Righteous', cursive;
+    opacity: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-clip-path: polygon(100% 30%, 100% 66%, 50% 100%, 0 66%, 0 30%, 50% 60%);
+    clip-path: polygon(100% 30%, 100% 66%, 50% 100%, 0 66%, 0 30%, 50% 60%);
+    transition: all 0.3s;
+}
+.serviceBox:hover:before{
+    opacity: 1;
+    top: 151px;
+}
+.serviceBox:hover:after{
+    opacity: 1;
+    top: 160px;
+}
+.serviceBox .service-icon{
+    color: #fff;
+    background: #f9a743;
+    font-size: 40px;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 50px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 15px #f9a743;
+    position: relative;
+    transition: all 0.3s;
+}
+.serviceBox .service-icon:before,
+.serviceBox .service-icon:after{
+    content: "";
+    border: 2px solid #f9a743;
+    border-left: 2px dashed #f9a743;
+    border-right: 2px dashed #f9a743;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    transition: all 0.3s;
+}
+.serviceBox .service-icon:after{
+    transform: rotate(-45deg);
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+}
+.serviceBox:hover .service-icon:before{ transform:rotate(-40deg); }
+.serviceBox:hover .service-icon:after{ transform:rotate(40deg); }
+.serviceBox .service-icon i.fa{ transition: all 0.3s; }
+.serviceBox:hover .service-icon i.fa{ transform: rotateX(360deg); }
+.serviceBox .title{
+    color: #f9a743;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+
+.list-unstyled{
+    text-emphasis: none;
+    text-decoration: none;
+    list-style-type: none;
+    color: #f9a743;
+}
+.cp-a:any-link{
+    color: #f9a743;
+ 
+}
+.content-company-profile{
+    padding-top: 90px;
+    color: #1d0e45;
+    padding-right: 14px;
+   font-weight: 500;
+
+}
+.cp-heading{
+    color:#f9a743;
+    font-family: 'Righteous', cursive;
+}
+.img-gallery-about-1{
+    position: relative;
+    background: #1d0e45;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 5px;
+}
+
+/* ===================== COMPANY PROFILE ENDS =====================*/
+/* ===================== GET IN TOUCH SECTION STARTS =====================*/
+
+  .get-in-touch-details {
+    padding-top: 50px;
+    font-family: 'Karla', sans-serif;
+    
+  }
+  .get-in-touch-details .content-workshops{
+      margin-top: 130px;
+      padding-left: 50px;
+      text-align: left;
+      
+  }
+  .get-in-touch-details .subheading {
+    color: #37276e;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    font-family: 'Righteous', cursive;
+  }
+  .get-in-touch-details p {
+    color: #37276e;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    
+  }
+  .list-unstyled{
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .mailto-class:any-link{
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color:#37276e; 
+  }
+
+.btn-main {
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 10px 30px;
+  display: inline-block;
+  font-family: 'Karla', sans-serif;
+  background-color: #f9a743;
+  -moz-box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  -webkit-box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+  margin-bottom: 120px;
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+  background-image: linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+}
+.btn-main:hover,
+.btn-main:focus {
+  background-color: #f9a743;
+  color: #fff;
+}
+
+.btn-main-sm {
+  padding: 12px 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ===================== GET IN TOUCH SECTION ENDS =====================*/
+/* ===================== FOOTER STARTS =====================*/
+
+footer {
+	color:white;
+	background: #1d0e45;
+    padding:70px 0;
+   
+}
+
+footer h4 {
+	color:#ffffff;
+}
+
+footer h4:after {
+	content: "";
+  	display: block;
+  	width: 60px;
+  	height: 3px;
+ 	background-color: #f9a743;
+ 	margin-top: 12px;
+  	margin-bottom: 15px;
+}
+
+footer ul li a {
+	color:#ececee;
+}
+
+footer ul li a:hover {
+	color:#ffffff;
+}
+
+footer .button-big {
+	font-size:16px;
+	width:100%;
+}
+
+footer dt {
+	color:#ffffff;
+	font-family:'montserratlight';
+	font-size:25px;
+	margin-top:7px;
+	margin-bottom:3px;
+	cursor:pointer;
+}
+.list-unstyled-footer {
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+  }
+
+.footer-a:any-link {
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+   
+  }
+.check-sy-footer{
+    color: #f9a743;
+}
+
+/* ===================== FOOTER ENDS =====================*/
+/* ===================== SOCIAL ICONS STARTS =====================*/
+
+.social_icons_area .media .media-body h5{
+    color: #f9a743;
+    padding-top: 20px;
+   
+}
+.designer-profile:any-link{
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: #f9a743;
+}
+.social-icons ul
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.social-icons ul li
+{
+    list-style: none;
+}
+.social-icons ul li a
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #ddd, #fff);
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0px 10px 15px rgba(0,0,0,.3);
+    transition: .5s;
+}
+.social-icons ul li a:hover
+{
+    box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+}
+
+.social-icons ul li a .fa
+{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #fff, #ddd);
+    display: block;
+    border-radius: 50%;
+    line-height: 100%;
+    line-height: 48px;
+    font-size: 24px;
+    color: #bdbdbd;
+    transition: .5s;
+}
+.social-icons ul li:nth-child(1) a:hover .fa
+{
+    color: #3b5999;
+}
+.social-icons ul li:nth-child(2) a:hover .fa
+{
+    color: #55acee;
+}
+.social-icons ul li:nth-child(3) a:hover .fa
+{
+    color: #55acee;
+}
+.social-icons ul li:nth-child(4) a:hover .fa
+{
+    color: #df3649;
+}
+
+/* ===================== SOCIAL ICONS ENDS =====================*/
+
+/* ================================================================
+===================================================================
+===================================================================
+===================================================================
+===================================================================
+============================================== */
+
+/* ================ MEDIA QUERY STUFF ====================== */
+
+  @media only screen and (max-width: 980px) {
+    .middle-middle {
+        position: absolute;
+        font-weight: 700;
+        text-align: center;
+        font-size: 50px;
+        top: 47%;
+        left: 20%;
+        color: #f9a743;
+        font-family: 'Righteous', cursive;
+        display: flex;
+      }
+      .img-getintouch{
+        height: 500px !important;
+        width: 300px !important;
+      }
+      
+    .send-button{
+        margin-bottom: 300px !important;
+      
+    }
+    /* Social Icons Area */
+    .social_icons_area{
+        background: #050216; 
+        height:130px !important; 
+        padding-top: 10px
+    }
+    .social_icons_area .media .media-body h5{
+        color: #f9a743;
+        padding-top: 5px; 
+        text-align: center;  
+   }
+
+    .social-icons ul
+    {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding-top:70px;
+        display: flex;
+    }
+
+    .btn-main {
+        color: #fff;
+        border-radius: 30px;
+        font-size: 18px;
+        padding: 15px 40px;
+        display: inline-block;
+        background-color: #f9a743;
+        -moz-box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+        -webkit-box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+        box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+        background-image: -moz-linear-gradient(
+        bottom,
+        rgba(255, 239, 206, 0) 0%,
+        rgba(255, 239, 206, 0.25) 100%
+        );
+        margin-bottom: 80px;
+        background-image: -o-linear-gradient(
+        bottom,
+        rgba(255, 239, 206, 0) 0%,
+        rgba(255, 239, 206, 0.25) 100%
+        );
+        background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(255, 239, 206, 0) 0%,
+        rgba(255, 239, 206, 0.25) 100%
+        );
+        background-image: linear-gradient(
+        bottom,
+        rgba(255, 239, 206, 0) 0%,
+        rgba(255, 239, 206, 0.25) 100%
+        );
+    }
+
+}

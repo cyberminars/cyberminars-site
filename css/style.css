@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+
+.bg-dark{
+    background: transparent !important;
+    color: #f9a743;
+}
+.bg-dark.scrolled{
+    background: 
+    #1d0e45 !important;
+    color: #f9a743;
+}
+.nav-link:any-link{
+    text-emphasis: none;
+    text-decoration: none;
+    list-style-type: none;
+    color: #f9a743;
+}
+.carousel-item .active {
+    position: absolute;
+    text-align: center;
+    color: #f9a743;
+    display: flex;
+    background: no-repeat center center scroll;
+    -webkit-backdrop-size: cover;
+    background-size: cover;
+  }
+.middle-left {
+    position: absolute;
+    font-weight: 900;
+    font-size: 70px;
+    top: 35%;
+    left: 10%;
+    color: #f9a743;
+    display: flex;
+    font-family: 'Righteous', cursive;
+  }
+.middle-left-subtitle {
+    position: absolute;
+    font-weight: 400;
+    font-size: 40px;
+    top: 50%;
+    left: 10%;
+    color: white;
+    display: flex;
+    font-family: 'Righteous', cursive;
+  }
+.middle-middle{
+    position: absolute;
+    top: 17%;
+    left: 40%;
+    display: flex;
+}
+.middle-bottom{
+    position: absolute;
+    top: 67%;
+    left: 40%;
+    display: flex;
+
+}
+.right-top{
+    position: absolute;
+    top: 6%;
+    right: 9%;
+    display: flex;
+}
+
+/* ================ COMPANY PROFILE STARTS ====================== */
+
+.heading {
+    text-align: center;
+    color: #f9a743;
+    padding-bottom: 60px;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: 'Righteous', cursive;
+    text-decoration-color: #f9a743;
+    
+  }
+  .serviceBox{
+    color: #37276e;
+    background: linear-gradient(110deg, #37276e,#37276e);
+    
+    padding: 0 30px 30px;
+    margin: 20px 7px 0;
+    border-radius: 20px 20px 70px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    font-family: 'Karla', sans-serif;
+}
+.serviceBox:before{
+    content: '';
+    background: white;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border-radius: 10px 10px 55px 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+}
+.serviceBox .service-icon{
+    background: linear-gradient(110deg, #37276e, #37276e);
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    transform: translateY(-20px) translateX(-37px);
+    position: relative;
+    z-index: 1;
+}
+.serviceBox .service-icon img{ transition: all 0.3s ease 0s; }
+.serviceBox:hover .service-icon img{ transform: rotateX(360deg); }
+.serviceBox .service-icon:before{
+    content: "";
+    background: #f5f5f5;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    transform: translateX(-50%)translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+.serviceBox:hover .service-icon:before{ opacity: 1; }
+.serviceBox .title{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+.serviceBox .title:after{
+    content: '';
+    display: block;
+    clear: both;
+    background-color: #37276e;
+    height: 7px;
+    width: 25px;
+    margin: 5px 0 0;
+    border-radius: 10px;
+}
+.serviceBox .description{
+    font-size: 13px;
+    line-height: 23px;
+}
+.serviceBox.yellow,
+.serviceBox.yellow .service-icon{
+    color: #f9a743;
+    background: linear-gradient(110deg,#f9a743,#f9a743);
+}
+.serviceBox.yellow .title:after{ background-color: #f9a743; }
+
+/* ================ COMPANY PROFILE ENDS ====================== */
+/* ================ WORKSHOP SECTION STARTS ====================== */
+
+.workshop-details {
+    margin-top: 120px;
+    padding-top: 50px;
+    font-size: 20px;
+    padding-bottom: 50px;
+    background: linear-gradient(to right,#38286f,#24205b);
+  }
+  .workshop-details .content-workshops{
+      margin-top: 70px;
+      padding-left: 50px;
+      text-align: left;
+      font-size: 20px;
+      font-family: 'Karla', sans-serif;
+      
+  }
+  .workshop-details .subheading {
+    color: #f9a743;
+    font-weight: 500;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+  }
+  .workshop-details p {
+    color: #fff;
+    font-size: 25px;
+    
+  }
+  .list-unstyled {
+    font-size: 25px;
+    padding-left: 0;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    text-align: left;
+  }
+  .workshop-a:any-link {
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: #f9a743;
+    margin: 0;
+    padding: 0;
+  }
+  .mailto-class:any-link{
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color:#37276e; 
+  }
+
+/* ================ WORKSHOP SECTION ENDS ====================== */
+/* ================ GET IN TOUCH START ====================== */
+  .get-in-touch-details {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Karla', sans-serif;
+    
+  }
+  .get-in-touch-details .content-workshops{
+      margin-top: 130px;
+      padding-left: 50px;
+      text-align: left;
+      
+  }
+  .get-in-touch-details .subheading {
+    color: #37276e;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    font-family: 'Righteous', cursive;
+  }
+  .get-in-touch-details p {
+    color: #37276e;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+  }
+  .list-unstyled {
+    font-size: 25px;
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+  }
+  .workshop-a:any-link {
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: #f8c045;
+    margin: 0;
+    padding: 0;
+  }
+/* ================ GET IN TOUCH ENDS ====================== */
+
+/* ================================================================
+===================================================================
+===================================================================
+===================================================================
+===================================================================
+============================================== */
+
+/* ================ MEDIA QUERY STUFF ====================== */
+
+  @media only screen and (max-width: 600px) {
+    .send-button{
+        margin-bottom: 300px !important;
+      
+    }
+    /* Social Icons Area */
+    .social_icons_area{
+        background: #050216; 
+        height:130px !important; 
+        padding-top: 10px
+    }
+    .social_icons_area .media .media-body h5{
+        color: #f9a743;
+        padding-top: 5px; 
+        text-align: center;  
+   }
+
+    .social-icons ul
+    {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding-top:70px;
+        display: flex;
+    }
+}
+/* ===================== GET IN TOUCH START =====================*/
+.btn-main {
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 10px 30px;
+  display: inline-block;
+  background-color: #f9a743;
+  -moz-box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  -webkit-box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+  margin-bottom: 80px;
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+  background-image: linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+}
+.btn-main:hover,
+.btn-main:focus {
+  background-color: #f9a743;
+  color: #fff;
+}
+
+.btn-main-sm {
+  padding: 12px 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ===================== GET IN TOUCH ENDS =====================*/
+/* ===================== FOOTER STARTS =====================*/
+
+footer {
+	color:white;
+	background: #1d0e45;
+    padding:70px 0;
+   
+}
+
+footer h4 {
+	color:#ffffff;
+}
+
+footer h4:after {
+	content: "";
+  	display: block;
+  	width: 60px;
+  	height: 3px;
+ 	background-color: #f9a743;
+ 	margin-top: 12px;
+  	margin-bottom: 15px;
+}
+
+footer ul li a {
+	color:#ececee;
+}
+
+footer ul li a:hover {
+	color:#ffffff;
+}
+
+footer .button-big {
+	font-size:16px;
+	width:100%;
+}
+
+footer dt {
+	color:#ffffff;
+	font-family:'montserratlight';
+	font-size:25px;
+	margin-top:7px;
+	margin-bottom:3px;
+	cursor:pointer;
+}
+.list-unstyled-footer {
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+  }
+
+.footer-a:any-link {
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+   
+  }
+.check-sy-footer{
+    color: #f9a743;
+}
+
+/* ===================== FOOTER ENDS =====================*/
+/* ===================== SOCIAL ICONS START =====================*/
+
+.social_icons_area .media .media-body h5{
+    color: #f9a743;
+    padding-top: 20px;
+    font-family: 'Karla', sans-serif;
+   
+}
+.designer-profile:any-link{
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: #f9a743;
+}
+.social-icons ul
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.social-icons ul li
+{
+    list-style: none;
+}
+.social-icons ul li a
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #ddd, #fff);
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0px 10px 15px rgba(0,0,0,.3);
+    transition: .5s;
+}
+.social-icons ul li a:hover
+{
+    box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+}
+
+.social-icons ul li a .fa
+{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #fff, #ddd);
+    display: block;
+    border-radius: 50%;
+    line-height: 100%;
+    line-height: 48px;
+    font-size: 24px;
+    color: #bdbdbd;
+    transition: .5s;
+}
+.social-icons ul li:nth-child(1) a:hover .fa
+{
+    color: #3b5999;
+}
+.social-icons ul li:nth-child(2) a:hover .fa
+{
+    color: #55acee;
+}
+.social-icons ul li:nth-child(3) a:hover .fa
+{
+    color: #55acee;
+}
+.social-icons ul li:nth-child(4) a:hover .fa
+{
+    color: #df3649;
+}
+
+/* ===================== SOCIAL ICONS ENDS =====================*/
+
+/* ================================================================
+===================================================================
+===================================================================
+===================================================================
+===================================================================
+============================================== */
+
+/* ================ MEDIA QUERY STUFF ====================== */
+
+
+@media only screen and (max-width: 960px) {
+
+
+  .middle-left {
+    position: absolute;
+    font-weight: 600;
+    font-size: 30px;
+    top: 35%;
+    left: 2%;
+    color: #f9a743;
+    display: flex;
+  }
+.middle-left-subtitle {
+    position: absolute;
+    font-weight: 400;
+    font-size: 13px;
+    top: 55%;
+    left: 2%;
+    color: white;
+    display: flex;
+  }
+.middle-middle{
+    position: absolute;
+    top: 35%;
+    left: 47%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+.middle-bottom{
+    position: absolute;
+    top: 78%;
+    left: 46%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+
+}
+.right-top{
+    position: absolute;
+    top: 6%;
+    right: 9%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.img-un-events{
+  height: 300px !important;
+  width: 280px !important;
+
+}
+.img-getintouch{
+  height: 500px !important;
+  width: 300px !important;
+}
+
+
+/* Social Icons Area */
+.social_icons_area{
+  background: #050216; 
+  height:130px !important; 
+  padding-top: 10px
+}
+.social_icons_area .media .media-body h5{
+  color: #f9a743;
+  padding-top: 5px; 
+  text-align: center;  
+}
+
+.social-icons ul
+{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding-top:70px;
+  display: flex;
+}
+}
+
+
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+}
+@media only screen and (max-device-width: 480px) {
+ /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+@media only screen and (device-width: 768px) {
+ /* default iPad screens */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+/* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+/* For landscape layouts only */
+}
